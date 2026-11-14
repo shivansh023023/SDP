@@ -1,0 +1,12 @@
+$ git switch main
+Switched to branch 'main'
+
+$ git branch
+  feature
+* main
+
+$ git merge feature
+Updating df0ad2b..81ef279
+Fast-forward
+ about.html | 10 ++++++++++
+ 1 file changed, 10 insertions(+)

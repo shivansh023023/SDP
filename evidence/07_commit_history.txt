@@ -1,0 +1,8 @@
+$ git log --oneline --graph --all --decorate
+* 81ef279 (HEAD -> main, feature) Add website features to about page
+* df0ad2b Update homepage content
+* 5f7d64f Initial commit: Add homepage and about page
+
+$ git branch -a
+  feature
+* main

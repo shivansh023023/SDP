@@ -1,0 +1,4 @@
+$ git add about.html
+$ git commit -m "Add website features to about page"
+[feature 81ef279] Add website features to about page
+ 1 file changed, 10 insertions(+)

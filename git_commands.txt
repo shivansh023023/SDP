@@ -1,0 +1,118 @@
+================================================================================
+GIT COMMANDS REFERENCE LOG - ACADEMIC ASSIGNMENT
+================================================================================
+Project: Git & GitHub Workflow Demonstration
+Author: Shivansh Singh
+Email: singhshivansh023@gmail.com
+Repository: https://github.com/shivansh023023/SDP
+================================================================================
+
+1. ENVIRONMENT & CONFIGURATION COMMANDS
+--------------------------------------------------------------------------------
+Command: git --version
+Purpose: Verifies the installed version of Git on the local system to ensure environment compatibility.
+
+Command: git config user.name
+Purpose: Displays the configured user name for Git commit authorship.
+
+Command: git config user.email
+Purpose: Displays the configured email address associated with Git commits.
+
+
+2. REPOSITORY INITIALIZATION & BRANCH SETUP
+--------------------------------------------------------------------------------
+Command: git init
+Purpose: Initializes a new, empty local Git repository in the current project directory.
+
+Command: git branch -M main
+Purpose: Renames or confirms the primary default branch as 'main' according to modern Git conventions.
+
+Command: git status
+Purpose: Displays the status of the working tree, showing tracked, untracked, and modified files.
+
+
+3. STAGING AND COMMITTING CHANGES
+--------------------------------------------------------------------------------
+Command: git add index.html about.html
+Purpose: Stages the specified files (index.html and about.html) to the staging area for the initial commit.
+
+Command: git commit -m "Initial commit: Add homepage and about page"
+Purpose: Records a snapshot of staged changes into the local repository history with an explanatory message.
+
+Command: git add index.html
+Purpose: Stages modifications made to index.html after adding the welcome section.
+
+Command: git commit -m "Update homepage content"
+Purpose: Records the second commit capturing the updated homepage content.
+
+
+4. BRANCHING & FEATURE DEVELOPMENT
+--------------------------------------------------------------------------------
+Command: git branch feature
+Purpose: Creates an isolated branch named 'feature' pointing to the current commit for independent feature development.
+
+Command: git switch feature
+Purpose: Switches the active working branch from 'main' to 'feature'.
+
+Command: git branch
+Purpose: Lists all local branches and highlights the currently active branch with an asterisk (*).
+
+Command: git add about.html
+Purpose: Stages modifications made to about.html on the feature branch.
+
+Command: git commit -m "Add website features to about page"
+Purpose: Commits the website feature additions directly onto the isolated feature branch.
+
+Command: git switch main
+Purpose: Switches the working context back to the primary 'main' branch before performing the merge.
+
+
+5. MERGING & REPOSITORY HISTORY
+--------------------------------------------------------------------------------
+Command: git merge feature
+Purpose: Integrates the commits from the 'feature' branch into the active 'main' branch (executes a fast-forward merge).
+
+Command: git log --oneline --graph --all --decorate
+Purpose: Renders a compact, visual, single-line graph of commit history across all branches with ref decorations.
+
+Command: git branch -a
+Purpose: Lists all local and remote branches to verify branch existence and status.
+
+
+6. FILE EXCLUSION (.gitignore)
+--------------------------------------------------------------------------------
+Command: git status --ignored
+Purpose: Inspects the repository status including ignored files to verify that *.log and temp/ match exclusion rules.
+
+Command: git add .gitignore
+Purpose: Stages the .gitignore configuration file so that ignore rules are permanently tracked and versioned.
+
+Command: git commit -m "Add gitignore rules for logs and temporary files"
+Purpose: Commits the .gitignore file into the repository history.
+
+
+7. UNDO OPERATIONS (git revert)
+--------------------------------------------------------------------------------
+Command: git add index.html
+Purpose: Stages temporary changes added to index.html for the demonstration commit.
+
+Command: git commit -m "Add temporary demonstration content"
+Purpose: Commits temporary demonstration content to be safely undone.
+
+Command: git rev-parse HEAD
+Purpose: Outputs the exact full SHA-1 hash of the latest commit to record reference points.
+
+Command: git revert --no-edit HEAD
+Purpose: Creates a new commit that safely reverses all changes introduced by the target commit without deleting past history.
+
+
+8. GITHUB INTEGRATION & REMOTE SYNCHRONIZATION
+--------------------------------------------------------------------------------
+Command: git remote add origin https://github.com/shivansh023023/SDP
+Purpose: Connects the local Git repository to the remote GitHub repository under the shorthand alias 'origin'.
+
+Command: git remote -v
+Purpose: Verifies the configured remote repository URLs for both fetch and push operations.
+
+Command: git push -u origin main
+Purpose: Pushes the local 'main' branch and its complete commit history to the remote repository and sets upstream tracking.

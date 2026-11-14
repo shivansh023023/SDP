@@ -1,0 +1,6 @@
+$ git branch feature
+$ git switch feature
+Switched to branch 'feature'
+$ git branch
+* feature
+  main

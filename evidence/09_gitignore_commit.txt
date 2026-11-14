@@ -1,0 +1,8 @@
+$ git add .gitignore
+$ git commit -m "Add gitignore rules for logs and temporary files"
+[main a4a1a1f] Add gitignore rules for logs and temporary files
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+
+$ git log --oneline -n 1
+a4a1a1f (HEAD -> main) Add gitignore rules for logs and temporary files

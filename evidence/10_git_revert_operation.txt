@@ -1,0 +1,27 @@
+$ git add index.html
+$ git commit -m "Add temporary demonstration content"
+[main 69ddbb8] Add temporary demonstration content
+ 1 file changed, 3 insertions(+)
+$ git rev-parse HEAD
+69ddbb86ed07d8ad3898fa56047ff437ed4125ab
+
+$ git revert --no-edit HEAD
+[main 239e2df] Revert "Add temporary demonstration content"
+ Date: Sat Nov 14 23:01:34 2026 +0530
+ 1 file changed, 3 deletions(-)
+
+$ git log --oneline --graph --all --decorate
+* 239e2df (HEAD -> main) Revert "Add temporary demonstration content"
+* 69ddbb8 Add temporary demonstration content
+* a4a1a1f Add gitignore rules for logs and temporary files
+* 81ef279 (feature) Add website features to about page
+* df0ad2b Update homepage content
+* 5f7d64f Initial commit: Add homepage and about page
+
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	evidence/
+
+nothing added to commit but untracked files present (use "git add" to track)

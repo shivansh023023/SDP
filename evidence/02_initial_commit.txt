@@ -1,0 +1,6 @@
+$ git add index.html about.html
+$ git commit -m "Initial commit: Add homepage and about page"
+[main (root-commit) 5f7d64f] Initial commit: Add homepage and about page
+ 2 files changed, 178 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 index.html
