@@ -1,41 +1,33 @@
-# Git & GitHub Workflow Demonstration
+# GitHub Assignment – Git & GitHub Workflow
 
-An academic assignment project demonstrating comprehensive Git version control workflows, branching and merging strategies, undo operations using `git revert`, `.gitignore` configurations, and software testing test case design.
+## Project Overview
 
-## Project Structure
+This project demonstrates a complete Git and GitHub workflow, including repository initialization, commits, branching, merging, .gitignore implementation, and safe undo operations using git revert.
 
-```text
-GitHub_Assignment/
-│
-├── index.html          # Semantic HTML5 homepage with navigation & welcoming section
-├── about.html          # Semantic HTML5 about page detailing project features
-├── .gitignore          # Rules ignoring *.log files and the temp/ directory
-├── git_commands.txt    # Complete reference log of all Git commands executed
-├── README.md           # Project documentation and assignment overview
-│
-├── temp/               # Excluded folder for temporary build/runtime files
-│   └── temporary.txt   # Sample temporary file (ignored by Git)
-│
-└── evidence/           # Terminal session outputs captured during execution
-```
+## Project Files
 
-## Git Workflow Highlights
+- `index.html` – Project homepage.
+- `about.html` – About page with project features.
+- `.gitignore` – Ignores log files and temporary folders.
+- `git_commands.txt` – Git commands and explanations.
+- `evidence/` – Assignment execution evidence and screenshots.
 
-1. **Repository Initialization**: Initialized Git repository and set primary branch to `main`.
-2. **Commit Progression**: Created initial and subsequent feature commits following professional commit messages.
-3. **Feature Branching**: Created and switched to `feature` branch to develop feature enhancements independently.
-4. **Fast-Forward Merge**: Merged `feature` back into `main` cleanly.
-5. **Gitignore Rules**: Configured `.gitignore` to safely exclude log files (`*.log`) and temporary directories (`temp/`).
-6. **Non-Destructive Undo**: Demonstrated `git revert` to reverse an unwanted commit safely while preserving historical integrity.
-7. **Remote Publishing**: Connected to remote repository `https://github.com/shivansh023023/SDP` and synchronized branch history.
+## Git Operations Demonstrated
 
-## Software Testing Overview
+1. Local Git repository initialization.
+2. Initial and subsequent commits.
+3. Feature branch creation and switching.
+4. Feature branch modifications.
+5. Merging feature into main.
+6. Ignoring log files and temporary directories.
+7. Undoing a commit using git revert.
+8. Connecting the local repository to GitHub.
+9. Publishing the repository to a public GitHub remote.
 
-This project includes a comprehensive 10-scenario test suite for a user login system covering:
-- Positive functional paths
-- Negative validation checks
-- Boundary value analysis (password length constraints)
-- Security brute-force account lockout mechanisms (3-strike policy)
+## Software Testing
 
----
-*Created as part of Software Development / Software Testing coursework.*
+The assignment also includes ten test cases for a Login System, covering valid credentials, empty inputs, password length validation, invalid credentials, and account lockout after three consecutive failed attempts.
+
+## Repository
+
+GitHub: https://github.com/shivansh023023/SDP
